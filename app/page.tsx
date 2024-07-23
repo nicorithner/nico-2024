@@ -1,7 +1,9 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-  <h1 className="text-3xl font-bold">Nico&apos;s new portfolio</h1>
+    <main className="flex justify-center items-center">
+      <div>
+        <h1 className="text-3xl font-bold">Nico&apos;s new portfolio</h1>
+      </div>
+    </main>
   );
 }
