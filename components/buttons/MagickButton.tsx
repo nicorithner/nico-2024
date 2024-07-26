@@ -31,7 +31,7 @@ const MagicButton = ({
       {/* remove px-3 py-1, add px-5 gap-2 */}
       <span
         className={`inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg
-             bg-slate-950 px-7 text-lg sm:text-xs font-medium text-white backdrop-blur-3xl gap-2 ${otherClasses}`}
+             bg-slate-950 px-7  text-base sm:text-xs lg:text-lg font-medium text-white backdrop-blur-3xl gap-2 ${otherClasses}`}
       >
         {position === "left" && icon}
         {title}
