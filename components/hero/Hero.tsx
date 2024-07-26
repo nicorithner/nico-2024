@@ -4,8 +4,22 @@ import MagicButton from "../buttons/MagickButton";
 import { FaLocationArrow } from "react-icons/fa";
 import { PatternBackground } from "../ui/PatternBackground";
 import Image from "next/image";
+import { TypewriterEffect } from "../ui/TypewriterEffect";
 
 const Hero = () => {
+  const words = [
+    {
+      text: "Fullstack",
+      className: "text-blue-500 dark:text-blue-500",
+    },
+    {
+      text: "Software",
+    },
+    {
+      text: "Developer",
+    },
+  ];
+
   return (
     <div className="pb-20 pt-36">
       {/* Pattern Background */}
@@ -28,9 +42,8 @@ const Hero = () => {
             className="text-center text-[50rem] sm:text-2xl md:text-5xl lg:text-8xl z-10"
             words="NICO RITHNER"
           />
-          <h2 className="uppercase tracking-wider text-xs text-center text-blue-100 max-w-[80%] md:text-1xl lg:text-2xl mb-[2rem] z-10">
-            Full Stack Software Developer
-          </h2>
+
+          <TypewriterEffect words={words} className="z-10" />
 
           <a href="#about">
             <MagicButton
