@@ -28,14 +28,12 @@ const Hero = () => {
         styles="h-screen w-full dark:bg-black-100 bg-white  flex items-center justify-center absolute top-0 left-0"
       />
 
-      <div className="flex justify-center relative my-20 z-10">
-        <div className="max-w[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center overflow-hidden">
-          <Image
-            className="absolute z-0 -mr-[60rem] -mb-[10rem] sm:h-auto sm:max-w-full sm:z-10 "
+      <div className="flex justify-center lg:justify-start relative my-20 z-10">
+        <div className="max-w[89vw] md:max-w-2xl lg:ml-20 lg:max-w-[60vw] flex flex-col items-center justify-center pb-5 overflow-hidden">
+          <img
+            className="absolute  sm:z-10 sm:w-[15rem] sm:h-[15rem] sm:max-w-full lg:z-0 sm:mx-0 sm:mb-[22rem] lg:-mr-[60rem] lg:-mb-[14rem]  lg:h-auto lg:w-auto"
             src="/nico-circle.png"
             alt="headshot of Nico"
-            width={1200}
-            height={1200}
           />
 
           <TextGenerateEffect
