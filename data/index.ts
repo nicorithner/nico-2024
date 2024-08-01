@@ -1,3 +1,26 @@
+export const stack = [
+  "Ruby on Rails",
+  "Ruby",
+  "ReactJS/TS",
+  "JavaScript",
+  "TypeScript",
+  "Springboot",
+  "JAVA",
+  "SQL",
+  "PostgreSQL",
+  "SASS",
+  "Styled-components",
+  "CSS",
+  "AWS",
+  "Sentry",
+  "REST API",
+  "Rspec",
+  "Agile",
+  "Jira",
+  "GIT",
+  "Github",
+];
+
 export const experience = [
   {
     id: 1,
@@ -115,17 +138,18 @@ export const gridItems = [
     titleClassName: "justify-end",
     img: "/b1.svg",
     spareImg: "",
+    items: [],
   },
   {
     id: 2,
     title: "Place High Value on Communication",
     description: "I am flexible with time zone communications",
-    languages: ["Spanish", "English", "Norwegian"],
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-start",
     img: "",
     spareImg: "",
+    items: ["Spanish", "English", "Norwegian"],
   },
   {
     id: 3,
@@ -136,5 +160,6 @@ export const gridItems = [
     titleClassName: "justify-center",
     img: "",
     spareImg: "",
+    items: [...stack],
   },
 ];
