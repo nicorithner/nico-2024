@@ -1,26 +1,3 @@
-export const stack = [
-  "Ruby on Rails",
-  "Ruby",
-  "ReactJS/TS",
-  "JavaScript",
-  "TypeScript",
-  "Springboot",
-  "JAVA",
-  "SQL",
-  "PostgreSQL",
-  "SASS",
-  "Styled-components",
-  "CSS",
-  "AWS",
-  "Sentry",
-  "REST API",
-  "Rspec",
-  "Agile",
-  "Jira",
-  "GIT",
-  "Github",
-];
-
 export const experience = [
   {
     id: 1,
@@ -150,16 +127,5 @@ export const gridItems = [
     img: "",
     spareImg: "",
     items: ["Spanish", "English", "Norwegian"],
-  },
-  {
-    id: 3,
-    title: "My tech stack",
-    description: "My learning journey",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "",
-    titleClassName: "justify-center",
-    img: "",
-    spareImg: "",
-    items: [...stack],
   },
 ];
