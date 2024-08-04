@@ -1,3 +1,4 @@
+import About from "../components/about/About";
 import Hero from "../components/hero/Hero";
 import TechStackCard from "../components/techStack/TechStack";
 
@@ -7,6 +8,7 @@ export default function Home() {
       <div className="max-w-7xl w-full">
         <Hero />
         <TechStackCard />
+        <About />
       </div>
     </main>
   );
