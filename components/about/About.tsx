@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 import createGlobe from "cobe";
 import { useEffect, useRef } from "react";
 import { Us, Es, No } from "react-flags-select";
+import { motion } from "framer-motion";
 
 export default function About() {
   const cardsStandardStyle =
@@ -33,7 +34,6 @@ export default function About() {
 
   return (
     <div className="relative z-20 py-10 lg:py-15 max-w-7xl mx-auto">
-      <div className="relative ">
         <div className="grid grid-cols-1 lg:grid-cols-6 mt-12 rounded-md">
           {features.map((feature) => (
             <FeatureCard key={feature.title} className={feature.className}>
@@ -45,7 +45,6 @@ export default function About() {
             </FeatureCard>
           ))}
         </div>
-      </div>
     </div>
   );
 }
@@ -58,9 +57,15 @@ const FeatureCard = ({
   className?: string;
 }) => {
   return (
-    <div className={cn(`relative overflow-hidden m-4 min-h-fit`, className)}>
+    <motion.div
+      whileHover={{ scale: 1.05 }}
+      className={cn(
+        `relative overflow-hidden m-4 min-h-fit bg-slate-900`,
+        className
+      )}
+    >
       {children}
-    </div>
+    </motion.div>
   );
 };
 
