@@ -1,6 +1,6 @@
 import React from "react";
 import { TextGenerateEffect } from "../ui/TextGenerateEffect";
-import MagicButton from "../buttons/MagickButton";
+import MagicButton from "../buttons/MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
 import { PatternBackground } from "../ui/PatternBackground";
 import Image from "next/image";
@@ -21,7 +21,7 @@ const Hero = () => {
   ];
 
   return (
-    <div className="pb-20 pt-36 border border-4 border-green-500">
+    <div className="pb-20 pt-36">
       {/* Pattern Background */}
       {/* <PatternBackground
         gridType="dark:bg-dot-white/[0.4] bg-dot-black/[0.2]"
