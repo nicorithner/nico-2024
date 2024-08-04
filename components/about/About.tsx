@@ -6,7 +6,7 @@ import { Us, Es, No } from "react-flags-select";
 
 export default function About() {
   const cardsStandardStyle =
-    "row-span-1 relative overflow-hidden rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none  dark:bg-black bg-white justify-between flex flex-col space-y-4 ";
+    "row-span-1 relative overflow-hidden rounded-3xl justify-between flex flex-col space-y-4 ";
   const features = [
     {
       title: "About",
@@ -15,26 +15,26 @@ export default function About() {
         "Patient and persistent in the face of challenging problems.",
         "Team player, cooperative and kind. Firm believer that it takes a team to achieve great things.",
       ],
-      className: `${cardsStandardStyle} col-span-1 lg:col-span-3 row-span-2 border-2 border-pink-300 p-4`,
+      className: `${cardsStandardStyle} col-span-1 lg:col-span-3 row-span-2 border-2 p-4`,
     },
     {
       title: "",
       description: [],
       skeleton: <SkeletonFour />,
-      className: `${cardsStandardStyle} border-2 border-green-500 col-span-1 row-span-4 lg:col-span-3 px-0 py-0`,
+      className: `${cardsStandardStyle} border-2 col-span-1 row-span-4 lg:col-span-3 px-0 py-0`,
     },
     {
       title: "Place High Value on Communication",
       description: [ "Multilingual. Currently studying Norwegian bokmål at intermediate level." , "I am flexible with time zone communications" ],
       skeleton: <SkeletonTwo />,
-      className: `${cardsStandardStyle} col-span-1 lg:col-span-3 row-span-2 h-[20rem] border-2 border-orange-500 p-4 h-auto`,
+      className: `${cardsStandardStyle} col-span-1 lg:col-span-3 row-span-2 h-[20rem] border-2 p-4 h-auto`,
     },
   ];
 
   return (
-    <div className="relative z-20 py-10 lg:py-20 max-w-7xl mx-auto">
+    <div className="relative z-20 py-10 lg:py-15 max-w-7xl mx-auto">
       <div className="relative ">
-        <div className="grid grid-cols-1 lg:grid-cols-6 mt-12 xl:border rounded-md dark:border-neutral-800">
+        <div className="grid grid-cols-1 lg:grid-cols-6 mt-12 rounded-md">
           {features.map((feature) => (
             <FeatureCard key={feature.title} className={feature.className}>
               <FeatureTitle>{feature.title}</FeatureTitle>
@@ -114,7 +114,7 @@ export const SkeletonTwo = () => {
 
 export const SkeletonFour = () => {
   return (
-    <div className="h-full sm:h-40 md:h-60 sm:w-auto -mt-10 -ml-10  flex flex-col relative bg-transparent dark:bg-transparent">
+    <div className="h-full sm:h-40 md:h-60 sm:w-auto -mt-5 -ml-10  flex flex-col relative bg-transparent dark:bg-transparent">
       <Globe className="" />
     </div>
   );
