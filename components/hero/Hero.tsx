@@ -21,35 +21,36 @@ const Hero = () => {
   ];
 
   return (
-    <div className="flex flex-col lg:flex-row justify-center items-center">
+    <div className="pb-10 border-4 border-yellow-300 z-20">
       {/* Pattern Background */}
-      {/* <PatternBackground
+      <PatternBackground
         gridType="dark:bg-dot-white/[0.4] bg-dot-black/[0.2]"
         styles="h-full w-full dark:bg-black-100 bg-white  flex items-center justify-center absolute top-0 left-0"
-      /> */}
-
-      <img
-        className="lg:order-2 w-auto mt-4 rounded-full z-10 object-cover h-[12rem] lg:h-[30rem]"
-        src="/nico-headshot.png"
-        alt="headshot of Nico"
       />
-
-      <div className="flex flex-col justify-center items-center">
-        <TextGenerateEffect
-          className="text-center text-[50rem] sm:text-2xl md:text-5xl lg:text-8xl"
-          words="NICO RITHNER"
+      <div className="relative flex flex-col lg:flex-row justify-center items-center">
+        <img
+          className="lg:order-2 w-auto mt-4 rounded-full z-10 object-cover h-[12rem] lg:h-[30rem]"
+          src="/nico-headshot.png"
+          alt="headshot of Nico"
         />
 
-        <TypewriterEffect words={words} />
+        <div className="flex flex-col justify-center items-center">
+          <TextGenerateEffect
+            className="text-center text-[50rem] sm:text-2xl md:text-5xl lg:text-8xl"
+            words="NICO RITHNER"
+          />
 
-        <div className="flex justify-center items-center p-1 mt-4">
-          <a href="#about">
-            <MagicButton
-              title="Experience"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </a>
+          <TypewriterEffect words={words} />
+
+          <div className="flex justify-center items-center p-1 mt-4">
+            <a href="#about">
+              <MagicButton
+                title="Experience"
+                icon={<FaLocationArrow />}
+                position="right"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>
