@@ -21,28 +21,28 @@ const Hero = () => {
   ];
 
   return (
-    <div className="pb-20 pt-36">
+    <div className="flex flex-col lg:flex-row justify-center items-center">
       {/* Pattern Background */}
       {/* <PatternBackground
         gridType="dark:bg-dot-white/[0.4] bg-dot-black/[0.2]"
-        styles="h-full w-full dark:bg-black-100 bg-white  flex items-center justify-center absolute top-0 left-0 "
+        styles="h-full w-full dark:bg-black-100 bg-white  flex items-center justify-center absolute top-0 left-0"
       /> */}
 
-      <div className="flex justify-center lg:justify-start relative my-20 z-10 ">
-        <div className="max-w[89vw] md:max-w-2xl lg:ml-20 lg:max-w-[60vw] flex flex-col items-center justify-center pb-5 overflow-hidden">
-          <img
-            className="absolute  sm:z-10 sm:w-[15rem] sm:h-[15rem] lg:h-[50rem] lg:w-[50rem] lg:z-0 sm:mx-0 sm:mb-[22rem] lg:-mr-[70rem] lg:my-auto"
-            src="/nico-circle.png"
-            alt="headshot of Nico"
-          />
+      <img
+        className="lg:order-2 w-auto mt-4 rounded-full z-10 object-cover h-[12rem] lg:h-[30rem]"
+        src="/nico-headshot.png"
+        alt="headshot of Nico"
+      />
 
-          <TextGenerateEffect
-            className="text-center text-[50rem] sm:text-2xl md:text-5xl lg:text-8xl z-10"
-            words="NICO RITHNER"
-          />
+      <div className="flex flex-col justify-center items-center">
+        <TextGenerateEffect
+          className="text-center text-[50rem] sm:text-2xl md:text-5xl lg:text-8xl"
+          words="NICO RITHNER"
+        />
 
-          <TypewriterEffect words={words} className="z-10" />
+        <TypewriterEffect words={words} />
 
+        <div className="flex justify-center items-center p-1 mt-4">
           <a href="#about">
             <MagicButton
               title="Experience"
