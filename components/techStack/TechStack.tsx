@@ -50,7 +50,7 @@ export default function TechStackCard() {
     "flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] items-center gap-1 bg-white dark:bg-black max-h-fit max-w-fit max-h-[3rem] py-1 px-2";
 
   return (
-    <motion.div className="flex flex-row flex-wrap gap-2 dark:bg-dot-white/[0.2] bg-dot-black/[0.2] mt-10">
+    <motion.div className="flex flex-row flex-wrap gap-2 mt-10">
       {stack.map((tech, index) => (
         <motion.div
           key={index}
