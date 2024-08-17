@@ -1,6 +1,7 @@
 import React from "react";
 import MovingBorderCard from "../ui/MovingBorderCard";
 import { experience } from "../../data";
+import ResumeLink from "./ResumeLink";
 
 export default function WorkExperience() {
   const currentJob = experience[0];
@@ -119,6 +120,9 @@ export default function WorkExperience() {
             );
           })}
         </div>
+      </div>
+      <div className="flex justify-center items-center p-10">
+        <ResumeLink />
       </div>
     </div>
   );
