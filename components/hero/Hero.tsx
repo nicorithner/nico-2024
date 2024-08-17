@@ -43,7 +43,7 @@ const Hero = () => {
           <TypewriterEffect words={words} />
 
           <div className="flex justify-center items-center p-1 mt-4">
-            <a href="#about">
+            <a href="#experience">
               <MagicButton
                 title="Experience"
                 icon={<FaLocationArrow />}
