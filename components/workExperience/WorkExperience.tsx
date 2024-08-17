@@ -10,7 +10,7 @@ export default function WorkExperience() {
         My <span className="text-purple">Experience</span>
       </h1>
 
-      <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
+      <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-2 lg:gap-10">
         <MovingBorderCard
           key={currentJob.id}
           duration={Math.floor(Math.random() * 10000) + 10000}
@@ -39,7 +39,7 @@ export default function WorkExperience() {
               <h3 className="text-left italic text-sm lg:text-base">
                 {`${currentJob.location} - ${currentJob.years[0]} to ${currentJob.years[1]}`}
               </h3>
-              <ul className="list-none text-left">
+              <ul className="mt-1 list-none text-left text-xs lg:text-base">
                 {currentJob.desc.map((str, index): React.ReactNode => {
                   return <li key={index + 1}>{str}</li>;
                 })}
