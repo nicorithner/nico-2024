@@ -3,7 +3,6 @@ import { TextGenerateEffect } from "../ui/TextGenerateEffect";
 import MagicButton from "../buttons/MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
 import { PatternBackground } from "../ui/PatternBackground";
-import Image from "next/image";
 import { TypewriterEffect } from "../ui/TypewriterEffect";
 
 const Hero = () => {
@@ -21,7 +20,7 @@ const Hero = () => {
   ];
 
   return (
-    <div className="pb-10 border-4 border-yellow-300 z-20">
+    <div className="pb-5 lg:pb-10 border-4 pt-10 z-20">
       {/* Pattern Background */}
       <PatternBackground
         gridType="dark:bg-dot-white/[0.4] bg-dot-black/[0.2]"
@@ -29,7 +28,7 @@ const Hero = () => {
       />
       <div className="relative flex flex-col lg:flex-row justify-center items-center">
         <img
-          className="lg:order-2 w-auto mt-4 rounded-full z-10 object-cover h-[12rem] lg:h-[30rem]"
+          className="lg:order-2 w-[100%] lg:w-auto mt-4 lg:rounded-full z-10 object-cover h-[20rem] lg:h-[30rem]"
           src="/nico-headshot.png"
           alt="headshot of Nico"
         />
