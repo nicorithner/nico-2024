@@ -24,7 +24,7 @@ export const experience = [
     className: "md:col-span-2",
     thumbnail: "/BAH.png",
     location: "Denver, CO USA",
-    current: "true",
+    years: ["2023", "current"],
   },
   {
     id: 2,
@@ -47,7 +47,7 @@ export const experience = [
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
     location: "Broomfield, CO USA",
-    current: "false",
+    years: ["2021", "2022"],
   },
   {
     id: 3,
@@ -61,8 +61,11 @@ export const experience = [
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
     location: "Denver, CO USA",
-    current: "false",
+    years: ["2021", "2022"],
   },
+];
+
+export const education = [
   {
     id: 4,
     title: "Certified Backend Software Developer",
