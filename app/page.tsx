@@ -1,6 +1,7 @@
 import About from "../components/about/About";
 import Hero from "../components/hero/Hero";
 import TechStackCard from "../components/techStack/TechStack";
+import WorkExperience from "../components/workExperience/WorkExperience";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
         <Hero />
         <TechStackCard />
         <About />
+        <WorkExperience />
       </div>
     </main>
   );
