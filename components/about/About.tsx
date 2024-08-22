@@ -22,7 +22,7 @@ export default function About() {
       title: "",
       description: [],
       skeleton: <SkeletonFour />,
-      className: `${cardsStandardStyle} border-2 col-span-1 row-span-4 lg:col-span-3 px-0 py-0`,
+      className: `${cardsStandardStyle} border-2 col-span-1 row-span-4 lg:col-span-3 px-0 py-0 hidden md:block lg:block`,
     },
     {
       title: "Place High Value on Communication",
