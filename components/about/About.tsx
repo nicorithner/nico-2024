@@ -33,8 +33,8 @@ export default function About() {
   ];
 
   return (
-    <div className="relative z-20 py-10 lg:py-15 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-6 mt-12 rounded-md">
+    <div className="relative z-20 lg:py-15 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-6 mt-2 lg:mt-12 rounded-md">
           {features.map((feature) => (
             <FeatureCard key={feature.title} className={feature.className}>
               <FeatureTitle>{feature.title}</FeatureTitle>

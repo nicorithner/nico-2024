@@ -6,7 +6,7 @@ import ResumeLink from "./ResumeLink";
 export default function WorkExperience() {
   const currentJob = experience[0];
   return (
-    <div id="experience" className="relative py-20 w-full">
+    <div id="experience" className="relative py-5 lg:py-20 w-full">
       <h1 className="heading">
         My <span className="text-purple">Experience</span>
       </h1>
