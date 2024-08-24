@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/hooks/useOutsideClicks";
 
 export default function PreviousExperienceExpandable() {
-  const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
+  const [active, setActive] = useState<(typeof jobs)[number] | boolean | null>(
     null
   );
   const ref = useRef<HTMLDivElement>(null);
@@ -135,7 +135,7 @@ export default function PreviousExperienceExpandable() {
         ) : null}
       </AnimatePresence>
       <ul className="max-w-auto mx-auto w-full gap-4 relative">
-        {cards.map((card, index) => (
+        {jobs.map((card, index) => (
           <motion.div
             layoutId={`card-${card.title}-${id}`}
             key={`card-${card.title}-${id}`}
@@ -230,7 +230,7 @@ export const CloseIcon = () => {
   );
 };
 
-const cards = [
+const jobs = [
   {
     description: "Full Stack Engineer",
     title: "Altvia Solutions",
