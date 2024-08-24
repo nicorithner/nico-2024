@@ -1,4 +1,4 @@
-export const experience = [
+export const currentJob = [
   {
     id: 1,
     title: "Full Stack Engineer",
@@ -10,8 +10,11 @@ export const experience = [
     ],
     stack: [
       "Ruby",
-      "JavaScript",
       "Ruby on Rails",
+      "Java",
+      "Spring boot",
+      "Maven",
+      "JavaScript",
       "ReactJS",
       "AWS",
       "PostgreSQL",
@@ -25,43 +28,6 @@ export const experience = [
     thumbnail: "/BAH.png",
     location: "Denver, CO USA",
     years: ["2023", "current"],
-  },
-  {
-    id: 2,
-    title: "Full Stack Engineer",
-    company: "Altvia Solutions",
-    desc: [
-      "Contributed to the development and maintenance of Ruby/JavaScript code base.",
-      "Developed new features and documentation",
-      "Performed major update from RoR 5 to 6. Required a deep-dive since upgrading caused many breaking changes.",
-    ],
-    stack: [
-      "Ruby on Rails",
-      "ReactJS",
-      "AWS",
-      "PostgreSQL",
-      "Agile",
-      "Jira",
-      "Gitlab",
-    ],
-    className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
-    location: "Broomfield, CO USA",
-    years: ["2021", "2022"],
-  },
-  {
-    id: 3,
-    title: "Full Stack Engineer",
-    company: "ProductPlan",
-    desc: [
-      "Contributed to the development of new features as a key member of the Integrations team, including the enhancement of the app's integration with Azure DevOps, utilizing Ruby on Rails and ReactJS.",
-      "Maintained legacy-code Ruby on Rails/ReactJS monolith, proactively troubleshooting issues and conducting thorough tests to ensure optimal functionality and stability.",
-    ],
-    stack: ["Ruby on Rails", "ReactJS", "AWS", "PostgreSQL", "Agile", "Github"],
-    className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
-    location: "Denver, CO USA",
-    years: ["2021", "2022"],
   },
 ];
 
