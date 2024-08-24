@@ -152,8 +152,8 @@ export default function PreviousExperienceExpandable() {
                 }}
               >
                 <Image
-                  width={100}
-                  height={100}
+                  width={500}
+                  height={500}
                   src={card.src}
                   alt={card.title}
                   className="h-40 w-[100%] md:h-14 md:w-14 lg:h-[100%] lg:w-full rounded-lg object-cover"
