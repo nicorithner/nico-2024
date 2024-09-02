@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 import { MdPictureAsPdf } from "react-icons/md";
 
 export default function ResumeLink() {
-  const url: string = "https://drive.google.com/file/d/1ncNRoWOo-jnHhANPa7lrZU7r2TUMZMAh/view?usp=drive_link";
+  const url: string = "https://drive.google.com/file/d/1TciMtrHq-y6eAaXTs34pAj-1VzbgDHE7/view?usp=sharing";
   const title: string = "Grab My Resume";
   const slideRightStyle: string =
     "group-hover/feature:translate-x-2 transition duration-200";
