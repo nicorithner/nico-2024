@@ -16,7 +16,7 @@ export default function About() {
         "Patient and persistent in the face of challenging problems.",
         "Team player, cooperative and kind. Firm believer that it takes a team to achieve great things.",
       ],
-      className: `${cardsStandardStyle} col-span-1 lg:col-span-3 row-span-2 border-2 p-4`,
+      className: `${cardsStandardStyle} col-span-1 lg:col-span-3 row-span-2 border-2 p-4 h-fit`,
     },
     {
       title: "",
@@ -28,7 +28,7 @@ export default function About() {
       title: "Place High Value on Communication",
       description: [ "Multilingual. Currently studying Norwegian bokmål at intermediate level." , "I am flexible with time zone communications" ],
       skeleton: <SkeletonTwo />,
-      className: `${cardsStandardStyle} col-span-1 lg:col-span-3 row-span-2 h-[20rem] border-2 p-4 h-auto`,
+      className: `${cardsStandardStyle} col-span-1 lg:col-span-3 row-span-2 h-[20rem] border-2 p-4 h-fit`,
     },
   ];
 
