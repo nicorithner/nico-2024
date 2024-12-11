@@ -3,6 +3,7 @@ import MovingBorderCard from "../ui/MovingBorderCard";
 import { currentJob } from "../../data";
 import ResumeLink from "./ResumeLink";
 import PreviousExperienceExpandable from "./PreviousExperienceExpandable";
+import Image from "next/image";
 
 export default function WorkExperience() {
   return (
@@ -28,10 +29,12 @@ export default function WorkExperience() {
           className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800"
         >
           <div className="flex flex-col p-3 py-6 md:p-5 lg:p-10 gap-4 w-full">
-            <img
+            <Image
               src={currentJob[0].thumbnail}
               alt={currentJob[0].thumbnail}
               className="w-full lg:w-auto w-16"
+              width={660}
+              height={386}
             />
             <div className="lg:ms-5 text-left space-y-4">
               <h1 className="text-start text-xl lg:text-4xl font-bold">
