@@ -21,13 +21,13 @@ import {
 } from "devicons-react";
 
 const stack = [
-  ["Ruby on Rails", <RailsPlain key={1} />],
-  // ["Ruby", <RubyPlain key={2} />],
-  ["ReactJS/TS", <ReactOriginal key={3} />],
+  ["Ruby", <RubyPlain key={2} />],
+  ["JAVA", <JavaOriginal key={7} />],
   ["JavaScript", <JavascriptOriginal key={4} />],
   ["TypeScript", <TypescriptPlain key={5} />],
+  ["Ruby on Rails", <RailsPlain key={1} />],
   ["Springboot", <SpringOriginal key={6} />],
-  ["JAVA", <JavaOriginal key={7} />],
+  ["ReactJS/TS", <ReactOriginal key={3} />],
   ["SQL", <SqldeveloperOriginal key={8} />],
   // ["PostgreSQL", <PostgresqlPlain key={9} />],
   // ["SASS", <SassOriginal key={10} />],
