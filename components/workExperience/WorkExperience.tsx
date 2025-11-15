@@ -68,8 +68,15 @@ export default function WorkExperience() {
         </MovingBorderCard>
       </div>
       <PreviousExperienceExpandable />
-      <div className="flex justify-center items-center p-10">
-        <ResumeLink />
+      <div className="flex flex-col lg:flex-row justify-center items-center p-10 gap-3">
+        <ResumeLink
+          title="Få min CV"
+          url="https://drive.google.com/file/d/1iPixGsLv2gI243FcHbFkPHR6r6_6wzhq/view?usp=sharing"
+        />
+        <ResumeLink
+          title="Grab My Resume"
+          url="https://drive.google.com/file/d/1iPixGsLv2gI243FcHbFkPHR6r6_6wzhq/view?usp=sharing"
+        />
       </div>
     </div>
   );

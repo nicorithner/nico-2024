@@ -2,22 +2,22 @@ import React from "react";
 import { cn } from "@/lib/utils";
 import { MdPictureAsPdf } from "react-icons/md";
 
-export default function ResumeLink() {
-  const url: string = "https://drive.google.com/file/d/1TciMtrHq-y6eAaXTs34pAj-1VzbgDHE7/view?usp=sharing";
-  const title: string = "Grab My Resume";
+export default function ResumeLink({ title, url }: { title: string; url: string }) {
+  const urlParam: string = url;
+  const titleParam: string = title;
   const slideRightStyle: string =
     "group-hover/feature:translate-x-2 transition duration-200";
   return (
-    <main className="lg:border-2 relative group/feature bg-gradient-to-r from-slate-900 to-slate-800 active:border-blue-500  w-[15rem] cursor-pointer p-2 max-w-fit rounded-lg">
+    <main className="lg:border-2 relative group/feature bg-gradient-to-r from-slate-900 to-slate-800 active:border-blue-500 cursor-pointer p-2 w-full lg:w-fit rounded-lg">
       <a
-        href={url}
+        href={urlParam}
         target="_blank"
       >
-        <div className="grid grid-cols-4 gap-2 text-lg font-bold relative z-10 justify-center items-center">
+        <div className="flex items-center gap-3 text-lg font-bold relative z-10">
           <div className="absolute left-0 inset-y-0 h-fit group-hover/feature:min-h-[100%] w-2 group-hover/feature:bg-blue-500 transition-all duration-200 origin-center" />
           <span
             className={cn(
-              "col-span-1 inline-block text-neutral-800 dark:text-neutral-100",
+              "flex-shrink-0 text-neutral-800 dark:text-neutral-100",
               slideRightStyle
             )}
           >
@@ -25,11 +25,11 @@ export default function ResumeLink() {
           </span>
           <span
             className={cn(
-              "col-span-3 inline-block text-neutral-800 dark:text-neutral-100",
+              "flex-1 text-neutral-800 dark:text-neutral-100",
               slideRightStyle
             )}
           >
-            {title}
+            {titleParam}
           </span>
         </div>
       </a>
