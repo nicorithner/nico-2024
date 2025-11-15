@@ -71,7 +71,7 @@ export default function WorkExperience() {
       <div className="flex flex-col lg:flex-row justify-center items-center p-10 gap-3">
         <ResumeLink
           title="Få min CV"
-          url="https://drive.google.com/file/d/1iPixGsLv2gI243FcHbFkPHR6r6_6wzhq/view?usp=sharing"
+          url="https://drive.google.com/file/d/1x5EJ1wtRdTpoy0SVLGMYxqF7xtTN98eA/view?usp=sharing"
         />
         <ResumeLink
           title="Grab My Resume"
